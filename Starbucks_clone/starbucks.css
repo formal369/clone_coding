@@ -116,7 +116,7 @@ main > section.store-container > .inner_store > .store_images > a:hover { text-d
 
 /* ====== 푸터 ====== */
 /* 푸터 메뉴 */
-footer {background: #333;}
+footer {background: #3d3a39;}
 footer > section.menu-container {  background-image: url("img/footer_logo.png"); background-position: 1200px 60px; background-repeat: no-repeat; display: block; left: 18%; position: relative; border: 1px solid red; width: 65%; height: 325px; } 
 footer > section.menu-container > .inner_menus > ul { margin-top: 10px; display: inline-block; width: 150px; height: 100%; margin: 30px; vertical-align: top; } 
 footer > section.menu-container > .inner_menus > ul > .menu-title { padding: 20px 0; } 
@@ -127,17 +127,31 @@ footer > section.menu-container > .inner_menus > ul > li > a { color: #fff;font-
 /* 리워드 */
 footer > section.reward-container {
     display: block;
-    width: 65%;
-    border: 1px solid pink;
+    background-color: #282828;
+    height: 80px;
+}
+footer > section.reward-container > .inner_reward { 
     left: 18%;
     position: relative;
+    width: 65%;
 }
 footer > section.reward-container > .inner_reward > ul > li {
     display: inline-block;
-    border: 1px solid aqua;
+    overflow: hidden;
+    margin-top: 15px;
 }
-
-
+footer > section.reward-container > .inner_reward > ul > li:nth-child(1) { 
+    width: 160px;
+}
+footer > section.reward-container > .inner_reward > ul > li:nth-child(2) { 
+    width: 160px;
+}
+footer > section.reward-container > .inner_reward > ul > li:nth-child(3) { 
+    width: 180px;
+}
+footer > section.reward-container > .inner_reward > ul > li:last-child {
+    width: 190px;
+}
 
 
 
