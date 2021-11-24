@@ -16,14 +16,8 @@ header > div { position: relative; width: 1090px; margin: 0 auto; }
 header > div h1 { padding: 22px 0 24px; } 
 header > div nav { padding: 64px 0 0 0; } 
 header > div nav > ul > li { float: left; } 
-header > div nav > ul > li > a { display: block; padding: 15px 25px 0; height: 52px; font-size: 15px; color: #333;
-}
-header > div nav > ul > li > a:hover { 
-    background-color: #000;
-    text-decoration: underline;
-    color: rgb(22, 123, 54);
-}
-
+header > div nav > ul > li > a { display: block; padding: 15px 25px 0; height: 52px; font-size: 15px; color: #333; } 
+header > div nav > ul > li > a:hover { background-color: #000; text-decoration: underline; color: rgb(22, 123, 54); } 
 header > div > .spot { position: absolute; right: 40px; top: 20px; } 
 header > div .spot li { float: left; position: relative; } 
 header > div .spot li a { padding: 0 15px; font-size: 14px; color:#333; line-height: 100%; } 
@@ -36,13 +30,13 @@ header > div .spot li:last-child a > img { position: absolute; top: 8px; left: 9
 
 
 /* ====== 메인 ====== */
-/* banner */
+/* 배너 */
 main { padding-top: 135px; } 
 main > section > div { position: relative; } 
 main > section > div > img { width: 100%; height: 650px; } 
 main > section > div > button { position: absolute; top: 230px; left: 510px; width: 130px; height: 40px; background: #d1131d; color: #fff; border: 2px solid #fff; border-radius: 5px; font-size: 14px; -webkit-transition: background-color .7s, color .7s; } 
 main > section > div > button:hover { text-decoration: underline; cursor: pointer; background: rgb(198, 101, 101); } 
-/* notice */
+/* 공지 & 프로모션 */
 main > section.notice-container { position: relative; } 
 main > section.notice-container > .notice-left { height: 62px; width: 55%; background: #111; } 
 main > section.notice-container > .notice-left > .inner_notice { width: 90px; height: 45px; color : #fff; font-size: 17px; display: inline-block; text-align: center; margin-left: 370px; padding-top: 17px; } 
@@ -51,20 +45,23 @@ main > section.notice-container > .notice-left > .plus_btn { display: inline-blo
 main > section.notice-container > .notice-left > .plus_btn > a { color: #fff; font-size: 30px; border: 1px solid #fff; border-radius: 50%; width: 35px; height: 35px; display: block; transform: translate(28%, 28%); text-align: center; line-height: 1.1; } 
 main > section.notice-container > .notice-right { height: 62px; width: 45%; background: #f6f5ef; position: absolute; right: 0; } 
 main > section.notice-container > .notice-right > div.inner_promotion { width: 200px; height: 50px; display: inline-block; margin-left: 200px; font-size: 18px; color: #333; line-height: 3.3; } 
-main > section.notice-container > .notice-right > a > img { margin-bottom: 4px; } 
+main > section.notice-container > .notice-right > #down_arrow > img { position: absolute; right: 400px; top: 10px; cursor: pointer; } 
 
-/* reward */
+/* 히든창 */
+#hidden { width: 100%; height: 520px; display: none; position: relative; } 
+#hidden > .swiper-container > .swiper-wrapper > .swiper-slide { width:380px; height:490px; overflow:hidden; margin:0 auto; position: relative; } 
+#hidden > .swiper-container > .swiper-wrapper > .swiper-slide > img { width:100%; height:100%; object-fit:cover; } 
+#hidden > .swiper-container > .swiper-wrapper > .swiper-slide > a { display: block; width: 100px; height: 30px; border: 2px solid #333; color: #333; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 2.3; -webkit-transition: background-color .7s, color .7s; position: absolute; bottom: 5px; left: 250px; } 
+#hidden > .swiper-container > .swiper-wrapper > .swiper-slide > a:hover { text-decoration: underline; color: #fff; background-color: #333; } 
+#hidden > .swiper-pagination { position: absolute; bottom: 5px; } 
+
+/* 리워드 */
 main > section.reward-container { width: 100%; height: 260px; background-color: #1e3932; color: #fff; } 
-
 main > section.reward-container > .inner_reward { width: 60%; height: 100%; margin: auto; } 
-
 main > section.reward-container > .inner_reward > .reward_logo > img { margin-top: 35px; width: 200px; height: 180px; } 
-
 main > section.reward-container > .inner_reward .reward_contents > .reward_content { width: 650px; height: 150px; padding-left: 20px; display: inline-block; } 
-
 main > section.reward-container > .inner_reward .reward_contents > .reward_content > h1 { padding: 20px 0; font-size: 26px; } 
 main > section.reward-container > .inner_reward .reward_contents > .reward_content > p { font-size: 17px; } 
-/* 버튼 */
 main > section.reward-container > .inner_reward .reward_contents > .reward_btns { width: 260px; height: 150px; position: relative; } 
 main > section.reward-container > .inner_reward .reward_contents > .reward_btns > a { position: absolute; bottom: 30px; width: 80px; height: 35px; color: #fff; display: inline-block; border-radius: 6px; font-size: 13px; text-align: center; line-height: 2.6; } 
 main > section.reward-container > .inner_reward .reward_contents > .reward_btns > a:first-child { background-color: #00704a; border: 2px solid #00704a; text-decoration: underline; } 
@@ -148,15 +145,25 @@ footer > section.copyright-container > .inner_copyright > ul.copyright_menus > l
 footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li { padding: 25px 4px 4px 4px; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li:first-child > a { color : rgb(34, 111, 34); } 
 footer > section.copyright-container > .inner_copyright > ul > li > a { color: rgb(172, 171, 171); font-size: 12px; } 
-
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns { left: 31%; position: relative; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li { display: inline-block; width: 100px; height: 30px; border: 2px solid #fff; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 2.3; -webkit-transition: background-color .7s, color .7s; } 
-footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li > a { color: #fff; } 
-
-footer > section.copyright-container > .inner_copyright > ul.copyright_etcs { width: 64%;position: relative;left: 20%; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li:hover { text-decoration: underline; } 
+footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li > a { color: #fff; } 
+footer > section.copyright-container > .inner_copyright > ul.copyright_etcs { width: 64%; position: relative; left: 20%; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_etcs > li { display: inline-block; font-size: 11px; margin: 10px 9px 20px 0; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_last_line { text-align: center; } 
 
 
-/* body { height: 5000px; } */
+/* 카드 */
+body > .card-container { display: inline-block; position: fixed; top: 160px; right: 255px; z-index: 10000; } 
+
+/* 롤링박스 */
+.rolling_box { width: 300px; height: 40px; text-align: center; } 
+.rolling_box ul { width: 100%; height: 100%; overflow: hidden; position: relative; } 
+.rolling_box ul li { width: 100%; height: 100%; transition: .5s; position:absolute; transition: top .75s; top: 100%; z-index: 1; } 
+.card_sliding { top: 0 !important; z-index: 100 !important; } 
+.card_sliding_after { top: -100% !important; z-index: 10 !important; } 
+.rolling_box ul li p { font-size: 16px; line-height: 50px; color: #fff; } 
+.before_slide { transform: translateY(100%); } 
+.after_slide { transform: translateY(0); } 
+

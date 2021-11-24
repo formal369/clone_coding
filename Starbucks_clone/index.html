@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스벅</title>
+    <!-- 리셋 CSS -->
     <link rel="stylesheet" href="reset.css">
+    <!-- 디자인 CSS -->
     <link rel="stylesheet" href="starbucks.css">
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+    
     <!-- ====== 헤더 ====== -->
     <header>
         <div class="clearfix">
@@ -36,6 +43,7 @@
             </ul>
         </div>
     </header>
+
     <!-- ====== 메인 ====== -->
     <main>
         <!-- 배너 -->
@@ -51,13 +59,45 @@
                 <div class="inner_notice">
                     <p>공지사항</p>
                 </div>
-                <div class="rolling_box"></div>
+                <div class="rolling_box">
+                    <ul id ="rolling_box">
+                        <li class="card_sliding" id ="first"><p></p></li>
+                        <li class="" id ="second"><p></p></li>
+                        <li class="" id ="third"><p></p></li>
+                    </ul>
+                </div>
                 <div class="plus_btn pull-right"><a href="#">+</a></div>
             </div>
             <div class="notice-right pull-right">
-                <div class="inner_promotion"><a href=""><p>스타벅스 프로모션</p></a></div>
-                <a href="#"><img src="img/btn_prom_down.png" alt="화살표 버튼"></div></a>
+                <div class="inner_promotion"><a href="#"><p>스타벅스 프로모션</p></a></div>
+                <div id="down_arrow"><img src="img/btn_prom_down.png" alt="화살표 버튼"></div>
             </div>
+        </section>
+        <!-- 히든창 -->
+        <section id="hidden">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img/8CV1tZ_20201231084934041.jpg" alt="슬라이드 이미지 1">
+                        <a href="#">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/9WISHG_20211027153716647.jpg" alt="슬라이드 이미지 2">
+                        <a href="#">자세히 보기</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/GsfdzI_20211020160006261.jpg" alt="슬라이드 이미지 3">
+                        <a href="#">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 페이징 버튼 처리 -->
+            <div class="swiper-pagination"></div>
+            <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </section>
         <!-- 리워드 -->
         <section class="reward-container">
@@ -146,8 +186,10 @@
             </div>
         </section>
     </main>
+
     <!-- ====== 푸터 ====== -->
     <footer>
+        <!-- 푸터 메뉴 -->
         <section class="menu-container">
             <div class="inner_menus">
                 <ul>
@@ -183,6 +225,7 @@
                 </ul>
             </div>
         </section>
+        <!-- 푸터 리워드 -->
         <section class="reward-container">
             <div class="inner_reward">
                 <ul>
@@ -195,7 +238,7 @@
                 </ul>
             </div>
         </section>
-        <!-- Copyright -->
+        <!-- 푸터 Copyright -->
         <section class="copyright-container">
             <div class="inner_copyright">
                 <ul class="copyright_menus">
@@ -227,7 +270,18 @@
     </footer>
 
 
-    
+
+    <!-- 카드 -->
+    <div class="card-container">
+        <div class="card1">
+            <a href="#"><img src="img/1iqO76_20211115094854583.png" alt="2021년 2차 바리스타 공개채용"></a>
+        </div>
+        <div class="card2">
+            <a href="#"><img src="img/1B4Upb_20211029180059437.png" alt="스타벅스 현대카드"></a>
+        </div>
+    </div>
+
+    <!-- === 자바스크립트 링크 === -->
     <script type="text/javascript" src="starbucks.js"></script>
 </body>
 
