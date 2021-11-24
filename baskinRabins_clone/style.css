@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+/* 기본설정
+----------------------------- */
+/* 문서 전체 크기, 여백 설정 */
+html, body {
+    width: 100%; 
+    height: 100%; 
+    padding: 0; 
+    margin: 0;
+    font-family: "Nanum Barun Gothic", "나눔고딕", "NanumGothic", "돋움", "Dotum", sans-serif;
+}
+li { list-style: none; }
+a { 
+    color: #483834;
+    text-decoration: none;
+}
+
+/* Float 처리 클래스 */
+.pull-left { float: left; }
+.pull-right { float: right; }
+.clearfix:after { content: ''; display: block; clear: both; float: none; }
+
+
+
+/* 블라인드 처리
+----------------------------- */
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+/* ======= 헤더 ====== */
+
+
+.top_area {
+    width: 100%;
+    height: 270px;
+    border-top: 5px solid #ff7c98;
+    border-bottom: 1px solid #ddd8d8;
+    background-image: url("img/bg_header.gif");
+    background-position: -0px 0px;
+    background-size: 190%;
+    background-repeat: no-repeat;
+}
+
+/* 로고 */
+.logo > a {
+    margin: 40px auto;
+    display: block;
+    width: 180px;
+    height: 180px;
+    background: url("img/logo_baskinrobbins.png");
+    background-size: cover;
+    text-indent: -10000px;
+}
+/* sns */
+.sns ul {
+    position: absolute;
+    top: 90px;
+    left: 280px;
+}
+.sns li {
+    display: block;
+    width: 85px;
+    height: 85px;
+}
+
+.sns li a img {
+    width: 68px;
+    height: 68px;
+}
+
+/* client */
+.client ul {
+    position: absolute;
+    top: 110px;
+    right: 350px;
+    
+}
+
+.client li {
+    display: block;
+    width: 135px;
+    height: 95px;
+    font-size: 20px;
+}
+.client li a {
+    color: black;
+}
+
+.client li.search > a > img {
+    position: absolute;
+    top: -40%;
+    right: -2%;
+    width: 100px;
+    height: 100px;
+}
+/* === 메뉴바 좌측 === */
+.inner2 {
+    height: 80px;
+    position: relative;
+}
+.member {
+    width: 22%;
+    height: 80px;
+    margin-top: 0px;
+}
+.member > ul {
+    margin-left: 280px;
+}
+
+.member > ul > li {
+    margin-top: 0px;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+}
+
+.member span {
+    width: 80px;
+    height: 45px;
+    display: block;
+    background: url(img/gnb_menu.png);
+    background-size: 150rem;
+    text-indent: -10000px;
+}
+#login {
+    background-position: 0px -25px;
+}
+#join {
+    background-position: -203px -25px;
+}
+
+/* === 메뉴바 우측 === */
+
+/* .gnb_wrap:hover .pop_menu_area {
+} */
+.gnb_wrap > ul {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 76%;
+}
+.gnb_wrap > ul > li {
+    margin-top: 0px;
+    width: 350px;
+    height: 100px;
+    display: inline-block;
+}
+.gnb_wrap > ul > li:first-child {
+    width: 440px;
+}
+.gnb_wrap span {
+    margin: auto;
+    width: 160px;
+    height: 65px;
+    display: block;
+    background: url(img/gnb_menu.png);
+    background-size: 2300px;
+    text-indent: -10000px;
+}
+#flavor {
+    background-position: -260px -25px;
+    width: 380px;
+}
+#menu {
+    background-position: -830px -25px;
+}
+#nutrition {
+    width: 250px;
+    background-position: 1180px -25px;
+}
+#event {
+    background-position: 805px -25px;   
+}
+#store {
+    background-position: 465px -25px;
+}
+#about{
+    background-position: 160px -25px;
+}
+
+/* 팝메뉴 */
+.pop_menu_area {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: none;
+}
+
+.gnb_wrap {
+    width: 76%;
+}
+.member2 {
+    width: 24%
+}
+.gnb_wrap > ul {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 76%;
+}
+.gnb_wrap > ul > li {
+    margin-top: 0px;
+    width: 350px;
+    height: 100px;
+    display: inline-block;
+}
+.gnb_wrap > ul > li:first-child {
+    width: 440px;
+}
+.gnb_wrap span {
+    margin: auto;
+    width: 160px;
+    height: 65px;
+    display: block;
+    background: url(img/gnb_menu.png);
+    background-size: 2300px;
+    text-indent: -10000px;
+}
+.inner3 {
+    height: 540px;
+    position: relative;
+}
+.member2 span {
+    width: 395px;
+    height: 390px;
+    display: block;
+    background: url(img/img_happypoint_app.jpg);
+    background-size: 99%;
+    background-repeat: no-repeat;
+    text-indent: -10000px;
+    margin: 130px 0px 10px 250px;
+}
+#pop_flavor {
+    width: 410px;
+    height: 530px;
+    display: block;
+    background: url(img/img_monthly_fom_211101.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -10000px;
+}
+
+.pop_right ul {
+    margin-right: 10px;
+}
+.pop_right li {
+    margin: 1px 30px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    
+}
+.pop_right li a {
+    font-size: 24px;
+    line-height: 5;
+    color: #7b7b7b;
+}
+/* 배너 */
+.banner {
+    height: 300px;
+    width: 100%;
+}
+.banner_image {
+    background-image: url("img/1610330217.jpg");
+    background-size: cover;
+}
+
+/* 풀페이지 */
+.s0 {
+    background-image: url('img/1610330197.jpg');
+    background-size: cover;
+}
+
+/* #fp-nav ul li a span {
+    background-color: #fff;
+} */
