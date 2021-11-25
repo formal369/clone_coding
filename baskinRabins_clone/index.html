@@ -6,10 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>베라</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="./node_modules/fullpage.js/dist/fullpage.css">
-        <script src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
+        <link rel="stylesheet" href="reset.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <!-- === 헤더 === -->
     <header>
         <div class="inner_header">
             <div class="top_area">
@@ -108,23 +111,190 @@
             </div>
         </div>
     </header>
-    <section>
-        <div class="banner">
-            <a href="#"><span class="banner_image"></span></a>
-        </div>
-        <!-- 풀페이지 -->
-        <div id="full-page">
-            <div class="section">
-                <div class="slide s0">Slide1</div>
-                <div class="slide">Slide2</div>
-                <div class="slide">Slide3</div>
-                <div class="slide">Slide4</div>
-                <div class="slide">Slide5</div>
-                <div class="slide">Slide6</div>
+    <section class="banner">
+        <a href="#"><img src="img/1610330197.jpg" alt="배너 이미지"></div></a>
+    </section>
+    <!-- Swiper 큰 배너 -->
+    <section id="swiper" class="first_swiper">
+        <div id="swiper-container1" class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/1630631572.jpg" alt="슬라이드 이미지 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/1620718839.png" alt="슬라이드 이미지 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/1620351475.png" alt="슬라이드 이미지 3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/1657508413.png" alt="슬라이드 이미지 4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/1610330217.jpg" alt="슬라이드 이미지 5">
+                </div>
             </div>
         </div>
+        <!-- 페이징 버튼 처리 -->
+        <div class="swiper-pagination"></div>
+        <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </section>
+    <!-- 이벤트 -->
+    <section class="event-container">
+        <img src="img/h_event.png" alt="이벤트 타이틀">
+        <div class="swiper-container" id="swiper-container2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/banner_delivery.png" alt="해피오더"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>해피오더 딜리버리로 간편하게 주문하세요!</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/banner_delivery_bm.png" alt="배달의 민족"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>배달의 민족에서 빠르게 주문하세요!</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/banner_delivery_ygy.png" alt="요기요"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>요기요에서 손쉽게 주문하세요!</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/banner_delivery_kakao.png" alt="카카오톡"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>카카오톡 주문하기에서 편리하게 주문하세요!</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/1630631151.jpg" alt="KT 멤버십"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>KT 멤버십 고객이라면 누구나 파인트 30% 할인!</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/1639297260.png" alt="제휴 서비스"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>제휴 할인 카드 혜택 안내</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/1570702843.png" alt="배스킨라빈스체"></a>
+                            <a href="#"><img class="event_text" src="img/stit_online.gif" alt="온라인 이벤트"></a>
+                            <a href="#"><h2>2018 한글날 기념 무료 글꼴 공개! 배스킨라빈스체</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/1578277305.png" alt="1회용 컵"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                            <a href="#"><h2>1회용 컵 사용 줄이기 안내</h2></a>
+                            <a href="#"><p>상시진행</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <a href="#"><img class="event_image" src="img/banner_praise_2021-3.png" alt="칭찬점포"></a>
+                            <a href="#"><img class="event_text" src="img/stit_store.gif" alt="스토어 이벤트"></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 페이징 버튼 처리 -->
+        <div class="swiper-pagination2"></div>
+        <!-- 방향 버튼 상황에 따라 추가 삭제가능 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    </section>
+    
+    <!-- 메뉴 -->
+    <section class="menu-container">
+        <img src="img/h_menu.png" alt="메뉴 타이틀">
+        <div class="inner_menu">
+            <a href="#">
+                <img class="menu_image" src="img/img_menu_list_211101.png" alt="메뉴 이미지">
+            </a>
+        </div>
+    </section>
 
+    <!-- 기타 -->
+    <section class="etc-container">
+        <div class="inner_etc">
+            <div class="etc_banner">
+                <div class="etc_title">
+                    <div><img src="img/h_store.png" alt="BR STORE"></div>
+                    <div><img src="img/h_happyorder_delivery.png" alt="HAPPY ORDER & DELIVERY"></div>
+                </div>
+                <div class="etc_content">
+                    <a href="#"><img src="img/img_store.jpg" alt="내주변 가장 가까운 배스킨라빈스 매장을 찾아보세요!"></a>
+                    <a href="#"><img src="img/img_happyorder_delivery.png" alt="배스킨라빈스 모바일 사전 주문 & 배달 서비스"></a>
+                </div>
+            </div>
+            <div class="sns">
+                <div class="sns_title">
+                    <img src="img/h_sns.png" alt="SNS">
+                </div>
+                <div class="sns_content">
+                    <ul>
+                        <li><a href="#"><img src="img/icon_facebook.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/icon_twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/icon_blog.png" alt="블로그"></a></li>
+                        <li><a href="#"><img src="img/icon_instgram.png" alt="인스타그램"></a></li>
+                        <li><a href="#"><img src="img/icon_youtube.png" alt="유튜브"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- 인스타그램 -->
+    <section class="instagram-container">
+        <div class="inner_instagram">
+            <hr />
+            <div class="instagram_title"><a href="#"><img src="img/tit_sns.png" alt="BASKINROBBINS INSTAGRAM"></a></div>
+            <table>
+      
+                <tr>
+                    <td>1행 1열</td>
+                    <td>1행 2열</td>
+                    <td>1행 3열</td>
+                    <td>1행 4열</td>
+                    <td>1행 5열</td>
+                </tr>
+                <tr>
+                    <td>2행 1열</td>  
+                    <td>2행 2열</td>   
+                    <td>2행 3열</td>  
+                    <td>2행 4열</td>  
+                    <td>2행 5열</td>  
+                </tr>
+                <tr>
+                    <td>3행 1열</td>  
+                    <td>3행 2열</td>    
+                    <td>3행 3열</td>    
+                    <td>3행 4열</td>    
+                    <td>3행 5열</td>    
+                </tr>
+            </table>
+        </div>
+        
     </section>
 
 

@@ -36,8 +36,10 @@ a {
 
 /* ======= 헤더 ====== */
 
-
-.top_area {
+header >  {
+    border:1px solid red;
+}
+header > .inner_header > .top_area {
     width: 100%;
     height: 270px;
     border-top: 5px solid #ff7c98;
@@ -49,7 +51,7 @@ a {
 }
 
 /* 로고 */
-.logo > a {
+header > .inner_header > .top_area > .inner > .logo > a {
     margin: 40px auto;
     display: block;
     width: 180px;
@@ -59,41 +61,41 @@ a {
     text-indent: -10000px;
 }
 /* sns */
-.sns ul {
+header > .inner_header > .top_area > .inner > .sns ul {
     position: absolute;
     top: 90px;
     left: 280px;
 }
-.sns li {
+header > .inner_header > .top_area > .inner > .sns > ul > li {
     display: block;
     width: 85px;
     height: 85px;
 }
 
-.sns li a img {
+header > .inner_header > .top_area > .inner > .sns > li > a > img {
     width: 68px;
     height: 68px;
 }
 
 /* client */
-.client ul {
+header > .inner_header > .top_area > .inner > .client ul {
     position: absolute;
     top: 110px;
     right: 350px;
     
 }
 
-.client li {
+header > .inner_header > .top_area > .inner > .client li {
     display: block;
     width: 135px;
     height: 95px;
     font-size: 20px;
 }
-.client li a {
+header > .inner_header > .top_area > .inner > .client li a {
     color: black;
 }
 
-.client li.search > a > img {
+header > .inner_header > .top_area > .inner > .client li.search > a > img {
     position: absolute;
     top: -40%;
     right: -2%;
@@ -190,6 +192,10 @@ a {
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
 }
 
 .gnb_wrap {
@@ -205,7 +211,7 @@ a {
     width: 76%;
 }
 .gnb_wrap > ul > li {
-    margin-top: 0px;
+    margin-top: 25px;
     width: 350px;
     height: 100px;
     display: inline-block;
@@ -247,8 +253,9 @@ a {
 }
 
 .pop_right ul {
-    margin-right: 10px;
+    margin-left: 45px;
 }
+
 .pop_right li {
     margin: 1px 30px;
     width: 200px;
@@ -261,22 +268,233 @@ a {
     line-height: 5;
     color: #7b7b7b;
 }
+.pop_right li a:hover {
+    color: #ff9cc9;
+}
 /* 배너 */
 .banner {
     height: 300px;
     width: 100%;
+    
 }
-.banner_image {
-    background-image: url("img/1610330217.jpg");
-    background-size: cover;
-}
-
-/* 풀페이지 */
-.s0 {
-    background-image: url('img/1610330197.jpg');
-    background-size: cover;
+.banner > a > img {
+    width: 100%;
+    height: 90%;
+    
 }
 
-/* #fp-nav ul li a span {
-    background-color: #fff;
-} */
+/* Swiper 큰 배너 */
+.first_swiper { position: relative;}
+.first_swiper > .swiper-container > .swiper-wrapper > .swiper-slide > img { 
+    width: 100%;
+    height: 1500px;
+}
+.first_swiper > .swiper-pagination {
+    bottom: 80px;
+    position: absolute;
+}
+
+/* 이벤트 */
+.event-container { position: relative;}
+.event-container > img {
+    display: block;
+    margin: auto;
+    height: 30px;
+    padding: 120px 0;
+}
+.event-container > #swiper-container2 {
+    width: 100%;
+    height: 1000px;
+}
+.event-container > #swiper-container2 > .swiper-wrapper {
+    width: 100px;
+    height: 1200px;
+}
+
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide ul {
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    
+}
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide li {
+    width: 24%;
+    height: 70%;
+    display: inline-block;
+    margin-top: 160px;
+    margin-left: 10px;
+}
+
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide > ul > li > a {
+    display: block;
+    margin: 20px;
+}
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide > ul > li > a > img.event_image {
+    width: 97%;
+    height: 77%;
+    margin: auto;
+}
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide > ul > li > a > img.event_text {
+    width: 40%;
+    height: 10%;
+}
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide > ul > li > a > h2 {
+    font-size: 28px;
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+.event-container > #swiper-container2 > .swiper-wrapper > .swiper-slide > ul > li > a > p {
+font-size: 22px;
+color: rgb(172, 172, 172);
+}
+
+.event-container > .swiper-pagination2 {
+    position: absolute;
+    bottom: 70px;
+    display: inline-block;
+    margin-left: 1850px;
+}
+
+/* 메뉴 */
+.menu-container { background: url("img/bg_menu.jpg");
+background-repeat: no-repeat;
+background-size:130%;
+background-position: -550px -100px;
+height: 1900px;
+width: 100%;
+/* position: relative; */
+}
+.menu-container > img {
+    display: block;
+    margin: auto;
+    height: 30px;
+    padding-top: 100px;
+    /* margin-top: 420px; */
+}
+.menu-container > .inner-menu { 
+    width: 60%;
+    height: 500px;
+    /* position: relative; */
+    /* left: 50%; */
+    /* display: block; */
+}
+.menu_image {
+    
+    width: 1600px;
+    height: 1600px;
+    margin: 100px 0 0 1050px;
+}
+
+/* 기타 */
+
+.etc-container { 
+    height: 1580px;
+}
+.etc-container > .inner_etc {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+}
+
+
+.etc-container > .inner_etc > .etc_banner > .etc_title {
+    width: 100%;
+    height: 370px;
+}
+.etc-container > .inner_etc > .etc_banner > .etc_title div {
+    width: 49%;
+    display: inline-block;
+    height: 100%;
+    margin-left: 12px;
+    
+}
+
+.etc-container > .inner_etc > .etc_banner > .etc_title div img {
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 170px;
+}
+
+.etc-container > .inner_etc > .etc_banner > .etc_content {
+    width: 100%;
+    height: 600px;
+}
+.etc-container > .inner_etc > .etc_banner > .etc_content a {
+    width: 48%;
+    margin: auto;
+    display: inline-block;
+    height: 100%;
+}
+
+.etc-container > .inner_etc > .etc_banner > .etc_content a img {
+    height: 95%;
+    background-size: cover;
+    margin-left: 25px;
+    border: 1px solid #7b7b7b;
+}
+
+.sns > .sns_title {
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+.sns > .sns_title > img {
+    height: 30px;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 1270px;
+}
+
+.sns > .sns_content {
+    width: 30%;
+    height: 156px;
+    margin: auto;
+}
+
+.sns > .sns_content > ul li {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.sns > .sns_content > ul li a img {
+    width: 130px;
+    height: 130px;
+}
+
+/* 인스타그램 */
+.instagram-container { 
+    height: 1500px;
+}
+.instagram-container > .inner_instagram {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+.instagram-container > .inner_instagram > .instagram_title {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+}
+.instagram-container > .inner_instagram > .instagram_title > a > img {
+    height: 33px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    position:relative;
+    z-index: 100;
+}
+.instagram-container > .inner_instagram > hr {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    background-color: #7b7b7b;
+}
+
+/* 인스타그램 테이블 */
