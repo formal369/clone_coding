@@ -1,5 +1,3 @@
-// const { fullpage } = require("jquery");
-
 const trigger = document.querySelectorAll(".gnb");
 const pop = document.querySelector(".pop_menu_area");
 
