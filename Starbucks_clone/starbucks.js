@@ -100,3 +100,44 @@ listCnt = 0
 
 console.log(listCnt)
 }, timer);
+
+// === 순서대로 나타나는 이미지 구현 ==
+const carry_the_merry = document.getElementById("carry_the_merry");
+const toffee_nut_latte = document.getElementById("toffee_nut_latte");
+const three_drinks = document.getElementById("three_drinks");
+const toffee_nut_frappuccino = document.getElementById("toffee_nut_frappuccino");
+const appear_button = document.getElementById("appear_button");
+
+const array = [ carry_the_merry, toffee_nut_latte, three_drinks, toffee_nut_frappuccino, appear_button ];
+
+let counter=0;
+let opacity =0;
+
+// 페이드인 효과 함수
+function show(target){
+  
+  opacity = Number(window.getComputedStyle(target).getPropertyValue("opacity"));
+  
+  if(opacity<1){
+    opacity = opacity+0.1;
+    target.style.opacity=opacity;
+  }
+  else{
+    return false;
+  }
+}	 
+
+// 페이드인 순서대로 실행
+setInterval(() => {
+  if(counter > array.length) {
+    return false;
+  }
+  
+  let fade = array[counter];
+
+  setInterval(() => {
+    show(fade);
+  },100);
+
+  counter++;
+}, 1000);
