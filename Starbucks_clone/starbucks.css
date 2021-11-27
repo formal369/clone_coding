@@ -195,7 +195,7 @@ body > .card-container { display: inline-block; position: fixed; top: 160px; rig
 
 .secret { 
     display: none;
-    height: 520px;
+    /* height: 520px; */
     position: absolute;
     width: 1900px;
     margin: auto;
@@ -203,22 +203,26 @@ body > .card-container { display: inline-block; position: fixed; top: 160px; rig
     left: -406px;
 }
 .secret  .inner_secret {
+    /* position:relative; */
     width: 57%;
     height: 75%;
     margin: auto;
 }
 .secret  .inner_secret > .gray_box {
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 .secret  .inner_secret > .gray_box > ul {
-    display: block;
-    width: 20%;
-    height: 49%;
-    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
     float: left;
+    width: 20%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: 10px 0 15px 0;
 }
 .secret  .inner_secret > .gray_box > ul > .gray_title {
-    
     padding: 12px 0;
 }
 .secret  .inner_secret > .gray_box > ul > .gray_title > a {
@@ -246,6 +250,7 @@ body > .card-container { display: inline-block; position: fixed; top: 160px; rig
 .secret  .inner_secret2 > .black_box > div { 
     height: 40%;
     line-height: 1.7;
+    padding-bottom: 20px;
 }
 .secret  .inner_secret2 > .black_box > div:first-child {
     padding-top: 20px;
