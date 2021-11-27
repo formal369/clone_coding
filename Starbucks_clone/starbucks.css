@@ -16,8 +16,16 @@ header > div { position: relative; width: 1090px; margin: 0 auto; }
 header > div h1 { padding: 22px 0 24px; } 
 header > div nav { padding: 64px 0 0 0; } 
 header > div nav > ul > li { float: left; } 
+
+header > div nav > ul > li:hover div {
+display: block;
+}
+
+
 header > div nav > ul > li > a { display: block; padding: 15px 25px 0; height: 52px; font-size: 15px; color: #333; } 
-header > div nav > ul > li > a:hover { background-color: #000; text-decoration: underline; color: rgb(22, 123, 54); } 
+header > div nav > ul > li:hover { background-color: #000; text-decoration: underline; color: #649403; 
+
+} 
 header > div > .spot { position: absolute; right: 40px; top: 20px; } 
 header > div .spot li { float: left; position: relative; } 
 header > div .spot li a { padding: 0 15px; font-size: 14px; color:#333; line-height: 100%; } 
@@ -67,8 +75,8 @@ main > section.notice-container > .notice-right > #down_arrow > img { position: 
 
 /* 리워드 */
 main > section.reward-container { width: 100%; height: 260px; background-color: #1e3932; color: #fff; } 
-main > section.reward-container > .inner_reward { width: 60%; height: 100%; margin: auto; } 
-main > section.reward-container > .inner_reward > .reward_logo > img { margin-top: 35px; width: 200px; height: 180px; } 
+main > section.reward-container > .inner_reward { width: 60%; height: 100%; margin: auto; }
+main > section.reward-container > .inner_reward > .reward_logo > img {margin-top: 35px; width: 200px; height: 180px; } 
 main > section.reward-container > .inner_reward .reward_contents > .reward_content { width: 650px; height: 150px; padding-left: 20px; display: inline-block; } 
 main > section.reward-container > .inner_reward .reward_contents > .reward_content > h1 { padding: 20px 0; font-size: 26px; } 
 main > section.reward-container > .inner_reward .reward_contents > .reward_content > p { font-size: 17px; } 
@@ -153,7 +161,7 @@ footer > section.copyright-container > .inner_copyright { left: 22%; position: r
 footer > section.copyright-container > .inner_copyright > ul { display: block; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li { display: inline-block; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li { padding: 25px 4px 4px 4px; } 
-footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li:first-child > a { color : rgb(34, 111, 34); } 
+footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li:first-child > a { color : #649403; } 
 footer > section.copyright-container > .inner_copyright > ul > li > a { color: rgb(172, 171, 171); font-size: 12px; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns { left: 31%; position: relative; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li { display: inline-block; width: 100px; height: 30px; border: 2px solid #fff; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 2.3; -webkit-transition: background-color .7s, color .7s; } 
@@ -165,7 +173,9 @@ footer > section.copyright-container > .inner_copyright > ul.copyright_last_line
 
 
 /* 카드 */
-body > .card-container { display: inline-block; position: fixed; top: 160px; right: 255px; z-index: 10000; } 
+body > .card-container { display: inline-block; position: fixed; top: 160px; right: 255px; z-index: 10000;
+} 
+
 
 /* 롤링박스 */
 .rolling_box { width: 300px; height: 40px; text-align: center; } 
@@ -177,3 +187,70 @@ body > .card-container { display: inline-block; position: fixed; top: 160px; rig
 .before_slide { transform: translateY(100%); } 
 .after_slide { transform: translateY(0); } 
 
+
+
+
+.secret { 
+    display: none;
+    height: 520px;
+    position: absolute;
+    width: 1900px;
+    margin: auto;
+    background-color: #3d3a39;
+    left: -406px;
+}
+.secret > .inner_secret {
+    width: 57%;
+    height: 75%;
+    margin: auto;
+}
+.secret > .inner_secret > .gray_box {
+    height: 100%;
+}
+.secret > .inner_secret > .gray_box > ul {
+    display: block;
+    width: 20%;
+    height: 49%;
+    box-sizing: border-box;
+    float: left;
+}
+.secret > .inner_secret > .gray_box > ul > .gray_title {
+    
+    padding: 12px 0;
+}
+.secret > .inner_secret > .gray_box > ul > .gray_title > a {
+    color: #fff;
+    font-weight: bold;
+}
+.secret > .inner_secret > .gray_box > ul > .gray_list {
+    
+    padding: 2px 0;
+}
+.secret > .inner_secret > .gray_box > ul > .gray_list > a {
+    color: rgb(144, 144, 144);
+    font-size: 12px;
+}
+.secret > .inner_secret2 {
+    width: 100%;
+    height: 25%;
+    background-color: #000;
+}
+.secret > .inner_secret2 > .black_box {
+    width: 57%;
+    height: 100%;
+    margin: auto;
+}
+.secret > .inner_secret2 > .black_box > div { 
+    height: 40%;
+    line-height: 1.7;
+}
+.secret > .inner_secret2 > .black_box > div:first-child {
+    padding-top: 20px;
+}
+.secret > .inner_secret2 > .black_box > div > a {
+    color: rgb(144, 144, 144);
+    font-weight: bold;
+}
+.secret > .inner_secret2 > .black_box > div > p {
+    color: #00b050;
+}
