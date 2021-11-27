@@ -17,7 +17,10 @@ header > div h1 { padding: 22px 0 24px; }
 header > div nav { padding: 64px 0 0 0; } 
 header > div nav > ul > li { float: left; } 
 
-header > div nav > ul > li:hover div {
+header > div nav > ul > li:hover div#secret_coffee {
+display: block;
+}
+header > div nav > ul > li:hover div#secret_menu {
 display: block;
 }
 
@@ -199,58 +202,59 @@ body > .card-container { display: inline-block; position: fixed; top: 160px; rig
     background-color: #3d3a39;
     left: -406px;
 }
-.secret > .inner_secret {
+.secret  .inner_secret {
     width: 57%;
     height: 75%;
     margin: auto;
 }
-.secret > .inner_secret > .gray_box {
+.secret  .inner_secret > .gray_box {
     height: 100%;
 }
-.secret > .inner_secret > .gray_box > ul {
+.secret  .inner_secret > .gray_box > ul {
     display: block;
     width: 20%;
     height: 49%;
     box-sizing: border-box;
     float: left;
 }
-.secret > .inner_secret > .gray_box > ul > .gray_title {
+.secret  .inner_secret > .gray_box > ul > .gray_title {
     
     padding: 12px 0;
 }
-.secret > .inner_secret > .gray_box > ul > .gray_title > a {
+.secret  .inner_secret > .gray_box > ul > .gray_title > a {
     color: #fff;
     font-weight: bold;
 }
-.secret > .inner_secret > .gray_box > ul > .gray_list {
+.secret  .inner_secret > .gray_box > ul > .gray_list {
     
     padding: 2px 0;
 }
-.secret > .inner_secret > .gray_box > ul > .gray_list > a {
+.secret  .inner_secret > .gray_box > ul > .gray_list > a {
     color: rgb(144, 144, 144);
     font-size: 12px;
 }
-.secret > .inner_secret2 {
+.secret  .inner_secret2 {
     width: 100%;
     height: 25%;
     background-color: #000;
 }
-.secret > .inner_secret2 > .black_box {
+.secret  .inner_secret2 > .black_box {
     width: 57%;
     height: 100%;
     margin: auto;
 }
-.secret > .inner_secret2 > .black_box > div { 
+.secret  .inner_secret2 > .black_box > div { 
     height: 40%;
     line-height: 1.7;
 }
-.secret > .inner_secret2 > .black_box > div:first-child {
+.secret  .inner_secret2 > .black_box > div:first-child {
     padding-top: 20px;
 }
-.secret > .inner_secret2 > .black_box > div > a {
+.secret  .inner_secret2 > .black_box > div > a {
     color: rgb(144, 144, 144);
     font-weight: bold;
 }
-.secret > .inner_secret2 > .black_box > div > p {
+.secret  .inner_secret2 > .black_box > div > p {
     color: #00b050;
 }
+
