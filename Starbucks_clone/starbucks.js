@@ -1,10 +1,10 @@
-// === AOS ===
+// === AOS === ( 화면을 스크롤하면 동작하는 라이브러리 )
 AOS.init({
   easing: 'ease-out-back',
   duration: 3000
 });
 
-// === Swiper ===
+// === Swiper === ( 사진 슬라이드 기능을 제공하는 라이브러리 )
 var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
 	slidesPerView: 3, //슬라이드를 한번에 3개를 보여준다
@@ -28,15 +28,16 @@ down_arrow.addEventListener("click", function () {
   hidden.style.display = ((hidden.style.display != 'none')? 'none' : 'block');
 });
 
-// === 롤링박스 ===
+// === 롤링박스 === ( 자동으로 롤링되는 텍스트 )
 let rollingData = [
   '시스템 개선 및 점검안내',
   '[채용] 스타벅스 코리아 바리스타 채용 안내',
   '2021 플래너 쿠폰 3종 유효기간 연장 안내',
   '사이렌 오더 주문 건수 제한 안내(11/2~12/31)',
-]    // 롤링할 데이터를 넣으면 됩니다 갯수 제한 없어요
 
-let timer = 2500 // 롤링되는 주기 입니다 (1000 => 1초)
+]    // 롤링할 데이터
+
+let timer = 2500 // 롤링되는 주기
 
 let first = document.getElementById('first'),
 second = document.getElementById('second'),
@@ -137,8 +138,8 @@ setInterval(() => {
 
   setInterval(() => {
     show(fade);
-  },100);
+  },100);   // 페이드 효과 속도
 
   counter++;
-}, 600);
+}, 600);    // 페이드 발동 속도
 
