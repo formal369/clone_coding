@@ -1,10 +1,16 @@
-// === AOS === ( 화면을 스크롤하면 동작하는 라이브러리 )
+/**
+ * @filename    : starbucks.js
+ * @author      : 김태영(rlaxodud9028@gmail.com)
+ * @description : AOS, Swiper 라이브러리, 롤링박스 및 순서대로 나타나는 이미지 구현 함수
+ */
+
+// === AOS 라이브러리 === ( 화면을 스크롤하면 동작하는 라이브러리 )
 AOS.init({
   easing: 'ease-out-back',
   duration: 3000
 });
 
-// === Swiper === ( 사진 슬라이드 기능을 제공하는 라이브러리 )
+// === Swiper 라이브러리 === ( 사진 슬라이드 기능을 제공하는 라이브러리 )
 var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
 	slidesPerView: 3, //슬라이드를 한번에 3개를 보여준다
@@ -29,6 +35,7 @@ down_arrow.addEventListener("click", function () {
 });
 
 // === 롤링박스 === ( 자동으로 롤링되는 텍스트 )
+// 참조 : velog.io/@jsg3121/텍스트-자동-롤링효과
 let rollingData = [
   '시스템 개선 및 점검안내',
   '[채용] 스타벅스 코리아 바리스타 채용 안내',
@@ -102,7 +109,7 @@ listCnt = 0
 console.log(listCnt)
 }, timer);
 
-// === 순서대로 나타나는 이미지 구현 ==
+// === 순서대로 나타나는 이미지 ==
 const carry_the_merry = document.getElementById("carry_the_merry");
 const toffee_nut_latte = document.getElementById("toffee_nut_latte");
 const three_drinks = document.getElementById("three_drinks");
@@ -142,4 +149,5 @@ setInterval(() => {
 
   counter++;
 }, 600);    // 페이드 발동 속도
+
 

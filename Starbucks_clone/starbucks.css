@@ -1,22 +1,28 @@
-@charset "utf-8"; /* 기본설정
+/**
+ * @filename    : starbucks.css
+ * @author      : 김태영(rlaxodud9028@gmail.com)
+ * @description : 스타벅스 메인페이지 클론코딩 css파일
+ */
+
+@charset "utf-8";
+
+/* 기본설정
 ----------------------------- */
 /* 문서 전체 크기, 여백 설정 */
-html, body { width: 100%; height: 100%; padding: 0; margin: 0; font: normal 13px Avenir, Arial, georgia; } 
+html, body { width: 100%; height: 100%; padding: 0; margin: 0; font: normal 13px Avenir, Arial, georgia;  font-size: 21px; } 
 
 /* Float 처리 클래스 */
 .pull-left { float: left; } 
 .pull-right { float: right; } 
 .clearfix:after { content: ''; display: block; clear: both; float: none; } 
 
-
-html { font-size: 21px; } 
 /* ====== 헤더 ====== */
 header { background: #f6f5ef; border-top: 2px solid #000; position: fixed; width: 100%; z-index: 100; } 
 header > div { position: relative; width: 1090px; margin: 0 auto; } 
 header > div h1 { padding: 22px 0 24px; } 
 header > div nav { padding: 64px 0 0 0; } 
-header > div nav > ul > li { float: left; } 
-header > div nav > ul > li:hover div#secret { display: block; } 
+header > div nav > ul > li { float: left; }
+header > div nav > ul > li:hover div#secret { display: block; }     /* 슬라이드 메뉴바 hover */
 header > div nav > ul > li > a { display: block; padding: 15px 25px 0; height: 52px; font-size: 15px; color: #333; } 
 header > div nav > ul > li:hover { background-color: #000; text-decoration: underline; color: #649403; } 
 header > div > .spot { position: absolute; right: 40px; top: 20px; } 
@@ -74,6 +80,17 @@ main > section.notice-container > .notice-left > .plus_btn > a { color: #fff; fo
 main > section.notice-container > .notice-right { height: 62px; width: 45%; background: #f6f5ef; position: absolute; right: 0; } 
 main > section.notice-container > .notice-right > div.inner_promotion { width: 200px; height: 50px; display: inline-block; margin-left: 200px; font-size: 18px; color: #333; line-height: 3.3; } 
 main > section.notice-container > .notice-right > #down_arrow > img { position: absolute; right: 400px; top: 10px; cursor: pointer; } 
+
+/* 롤링박스 */
+.rolling_box { width: 300px; height: 40px; text-align: center; } 
+.rolling_box ul { width: 100%; height: 100%; overflow: hidden; position: relative; } 
+.rolling_box ul li { width: 100%; height: 100%; transition: .5s; position:absolute; transition: top .75s; top: 100%; z-index: 1; } 
+.card_sliding { top: 0 !important; z-index: 100 !important; } 
+.card_sliding_after { top: -100% !important; z-index: 10 !important; } 
+.rolling_box ul li p { font-size: 16px; line-height: 50px; color: #fff; } 
+.before_slide { transform: translateY(100%); } 
+.after_slide { transform: translateY(0); } 
+
 
 /* 히든 Swiper 창 */
 #hidden { width: 100%; height: 520px; display: none; position: relative; } 
@@ -185,7 +202,7 @@ footer > section.copyright-container > .inner_copyright > ul.copyright_menus > l
 footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li:first-child > a { color : #649403; } 
 footer > section.copyright-container > .inner_copyright > ul > li > a { color: rgb(172, 171, 171); font-size: 12px; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns { left: 31%; position: relative; } 
-footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li { display: inline-block; width: 100px; height: 30px; border: 2px solid #fff; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 2.3; -webkit-transition: background-color .7s, color .7s; } 
+footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li { display: inline-block; width: 100px; height: 30px; border: 2px solid #fff; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 1.2; -webkit-transition: background-color .7s, color .7s; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li:hover { text-decoration: underline; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li > a { color: #fff; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_etcs { width: 64%; position: relative; left: 20%; } 
@@ -197,15 +214,6 @@ footer > section.copyright-container > .inner_copyright > ul.copyright_last_line
 body > .card-container { display: inline-block; position: fixed; top: 160px; right: 255px; z-index: 10000; } 
 
 
-/* 롤링박스 */
-.rolling_box { width: 300px; height: 40px; text-align: center; } 
-.rolling_box ul { width: 100%; height: 100%; overflow: hidden; position: relative; } 
-.rolling_box ul li { width: 100%; height: 100%; transition: .5s; position:absolute; transition: top .75s; top: 100%; z-index: 1; } 
-.card_sliding { top: 0 !important; z-index: 100 !important; } 
-.card_sliding_after { top: -100% !important; z-index: 10 !important; } 
-.rolling_box ul li p { font-size: 16px; line-height: 50px; color: #fff; } 
-.before_slide { transform: translateY(100%); } 
-.after_slide { transform: translateY(0); } 
 
 
 
