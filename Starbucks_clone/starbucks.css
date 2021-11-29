@@ -1,15 +1,14 @@
 /**
- * @filename    : starbucks.css
- * @author      : 김태영(rlaxodud9028@gmail.com)
+ * @filename : starbucks.css
+ * @author : 김태영(rlaxodud9028@gmail.com)
  * @description : 스타벅스 메인페이지 클론코딩 css파일
  */
 
 @charset "utf-8";
-
 /* 기본설정
 ----------------------------- */
 /* 문서 전체 크기, 여백 설정 */
-html, body { width: 100%; height: 100%; padding: 0; margin: 0; font: normal 13px Avenir, Arial, georgia;  font-size: 21px; } 
+html, body { width: 100%; height: 100%; padding: 0; margin: 0; font: normal 13px Avenir, Arial, georgia; font-size: 15px; } 
 
 /* Float 처리 클래스 */
 .pull-left { float: left; } 
@@ -21,8 +20,8 @@ header { background: #f6f5ef; border-top: 2px solid #000; position: fixed; width
 header > div { position: relative; width: 1090px; margin: 0 auto; } 
 header > div h1 { padding: 22px 0 24px; } 
 header > div nav { padding: 64px 0 0 0; } 
-header > div nav > ul > li { float: left; }
-header > div nav > ul > li:hover div#secret { display: block; }     /* 슬라이드 메뉴바 hover */
+header > div nav > ul > li { float: left; } 
+header > div nav > ul > li:hover div#secret { display: block; } /* 슬라이드 메뉴바 hover */
 header > div nav > ul > li > a { display: block; padding: 15px 25px 0; height: 52px; font-size: 15px; color: #333; } 
 header > div nav > ul > li:hover { background-color: #000; text-decoration: underline; color: #649403; } 
 header > div > .spot { position: absolute; right: 40px; top: 20px; } 
@@ -138,7 +137,9 @@ main > section.blend-container > .inner_blend > .move_blend_text > a { display: 
 main > section.blend-container > .inner_blend > .move_blend_text > a:hover { background-color: #333; color: #fff; } 
 
 /* RESERVE The MERRY */
-main > section.reserve-container > .inner_reserve { width: 100%; height: 550px; background-image: url("img/reserve_the_merry.png"); background-repeat: no-repeat; display: block; margin-top: 520px; position: relative; } 
+main > section.reserve-container { background-color: #004931;}
+main > section.reserve-container > .inner_reserve { width: 100%; height: 550px; display: block; margin-top: 520px; position: relative; } 
+main > section.reserve-container > .inner_reserve > img.christmas_bean_title { position: absolute; display: inline-block; top: 130px; left: 490px; } 
 main > section.reserve-container > .inner_reserve > a { position: absolute; bottom: 260px; left: 780px; display: block; width: 111px; height: 30px; color: #d5a012; border: 2px solid #d5a012; border-radius: 5px; font-size: 15px; text-align: center; line-height: 2.1; margin-top: 40px; text-decoration: underline; -webkit-transition: background-color .7s, color .7s; } 
 main > section.reserve-container > .inner_reserve > a:hover { text-decoration: underline; background: #d5a012; color: #fff; } 
 
@@ -202,7 +203,7 @@ footer > section.copyright-container > .inner_copyright > ul.copyright_menus > l
 footer > section.copyright-container > .inner_copyright > ul.copyright_menus > li:first-child > a { color : #649403; } 
 footer > section.copyright-container > .inner_copyright > ul > li > a { color: rgb(172, 171, 171); font-size: 12px; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns { left: 31%; position: relative; } 
-footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li { display: inline-block; width: 100px; height: 30px; border: 2px solid #fff; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 1.2; -webkit-transition: background-color .7s, color .7s; } 
+footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li { display: inline-block; width: 100px; height: 30px; border: 2px solid #fff; margin: 8px 2px; border-radius: 5px; text-align: center; line-height: 1.8; -webkit-transition: background-color .7s, color .7s; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li:hover { text-decoration: underline; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_btns > li > a { color: #fff; } 
 footer > section.copyright-container > .inner_copyright > ul.copyright_etcs { width: 64%; position: relative; left: 20%; } 

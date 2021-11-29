@@ -27,7 +27,7 @@ var mySwiper = new Swiper('.swiper-container', {
   
 
 });
-
+// 클릭하면 나타나는 창효과
 const down_arrow = document.getElementById("down_arrow");
 const hidden = document.getElementById("hidden");
 down_arrow.addEventListener("click", function () {
@@ -52,7 +52,6 @@ third = document.getElementById('third')
 let move = 2
 let dataCnt = 1
 let listCnt = 1
-
 
 first.children[0].innerHTML = rollingData[0]
 
